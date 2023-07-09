@@ -1,14 +1,13 @@
 #!/usr/bin/python3
 """
-Fabric script that distributes an archive to your web servers
+Fabric script that distributes archive to web servers
 """
 
 from datetime import datetime
 from fabric.api import *
 import os
 
-env.hosts = ["54.197.74.115", "100.26.167.131"]
-env.user = "ubuntu"
+env.hosts = ["54.197.74.115","100.26.167.131"]
 
 def do_pack():
     """
